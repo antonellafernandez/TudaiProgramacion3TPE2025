@@ -33,6 +33,7 @@ public class Backtracking {
      * (sumaActual + m.getPiezas() <= piezasTotales)
      * Se realiza una poda cuando al seleccionar una nueva máquina y sumar sus piezas con la suma parcial, supera el total de piezas necesario,
      * evitando continuar por esa rama.
+     *
      * Se guarda la mejor solución, es decir, la que utiliza la menor cantidad de puestas en funcionamiento.
      *
      * - Complejidad O(n log n + n^k) en el peor de los casos, siendo n la cantidad de máquinas disponibles y k la profundidad del árbol de exploración.
