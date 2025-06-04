@@ -19,11 +19,11 @@ public class Main {
 
         System.out.println("==================== Backtracking ====================");
         Backtracking b = new Backtracking();
-        System.out.println("Solución: " + b.backtracking(maquinas, piezasTotales));
+        b.backtracking(maquinas, piezasTotales);
         System.out.println();
 
         System.out.println("======================= Greedy =======================");
         Greedy g = new Greedy();
-        System.out.println("Solución: " + g.greedy(maquinas, piezasTotales));
+        g.greedy(maquinas, piezasTotales);
     }
 }
