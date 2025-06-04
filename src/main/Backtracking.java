@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Backtracking {
     private int cantidadEstadosGenerados;
-    private int piezasAcumuladas; // Suma acumulada para evitar calcularla en cada iteración.
+    private int piezasAcumuladas; // Suma acumulada para evitar calcularla en cada iteración
     private int piezasSolucion; // Suma final de piezas en mejorSolucion
     private List<Maquina> mejorSolucion;
 
@@ -29,7 +29,8 @@ public class Backtracking {
      * Un estado final puede ser aquel donde se hayan recorrido todas las máquinas, no necesariamente un estado solución.
      * Un estado solución es aquel en el que la suma de piezas alcanza exactamente el total requerido.
      *
-     * - Posibles podas.(sumaActual + m.getPiezas() <= piezasTotales)
+     * - Posibles podas.
+     * (sumaActual + m.getPiezas() <= piezasTotales)
      * Se realiza una poda cuando al seleccionar una nueva máquina y sumar sus piezas con la suma parcial, supera el total de piezas necesario,
      * evitando continuar por esa rama.
      * Se guarda la mejor solución, es decir, la que utiliza la menor cantidad de puestas en funcionamiento.

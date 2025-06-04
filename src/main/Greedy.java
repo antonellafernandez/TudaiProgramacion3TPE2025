@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Greedy {
     private int cantidadCandidatosConsiderados;
-    private int piezasAcumuladas; // Suma acumulada para evitar calcularla en cada iteración.
+    private int piezasAcumuladas; // Suma acumulada para evitar calcularla en cada iteración
     private List<Maquina> S; // Solución
 
     public Greedy() {
