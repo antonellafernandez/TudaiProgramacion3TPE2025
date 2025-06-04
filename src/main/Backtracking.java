@@ -7,7 +7,7 @@ import java.util.List;
 public class Backtracking {
     private int cantidadEstadosGenerados;
     private int piezasAcumuladas; // Suma acumulada para evitar calcularla en cada iteración.
-    private int piezasSolucion; //
+    private int piezasSolucion; // Suma final de piezas en mejorSolucion
     private List<Maquina> mejorSolucion;
 
     public Backtracking() {
