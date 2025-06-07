@@ -18,9 +18,6 @@ public class Backtracking {
     }
 
     /* Estrategia Backtracking:
-     * - Se ordenan las máquinas por piezas descendente, para utilizar el Longest Processing Time First y minimizar
-     * la cantidad de puestas en funcionamiento totales.
-     *
      * - ¿Cómo se genera el árbol de exploración?
      * Se exploran todas las posibles combinaciones de máquinas que sumen exactamente la cantidad de piezas requerida.
      * Cada nodo del árbol representa una secuencia parcial de máquinas elegidas hasta el momento.
@@ -36,13 +33,9 @@ public class Backtracking {
      *
      * Se guarda la mejor solución, es decir, la que utiliza la menor cantidad de puestas en funcionamiento.
      *
-     * - Complejidad O(n log n + n^k) en el peor de los casos, siendo n la cantidad de máquinas disponibles y k la profundidad del árbol de exploración.
+     * - Complejidad O(n^k) en el peor de los casos, siendo n la cantidad de máquinas disponibles y k la profundidad del árbol de exploración.
      */
     public List<Maquina> backtracking(List<Maquina> M, int piezasTotales) {
-        // Ordenar las máquinas por piezas desc
-        // Complejidad sort O(n log n), siendo n la cantidad de máquinas disponibles
-        Collections.sort(M, new ComparadorPiezasDesc()); // Longest Processing Time First
-
         List<Maquina> solucionActual = new ArrayList<>();
         backtracking(M, piezasTotales, solucionActual);
 
